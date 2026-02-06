@@ -1,0 +1,107 @@
+m <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="StudentManageDashboard.css">
+</head>
+<body>
+    <h1>Student.ly</h1>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="email-box">
+        <input type="email" placeholder="Email address">
+        <button>Get Started</button>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <hr>
+    <nav>
+        <B>ADD LIST</B>
+                <p>Add a new student in a list</p>
+                <button class="add">ADD</button>
+                <br>
+                <hr>
+        <B>DELETE LIST</B>
+                <p>Delete a new student in a list</p>
+                <button class="delete">DELETE</button>
+                <br>
+                <hr>
+        <B>SEARCH</B>
+                <p>Search a new student in a list</p>
+                <button class="search">SEARCH</button>
+                <br>
+                <hr>
+        <B>EDIT</B>
+                <p>Edit a new student in a list</p>
+                <button class="edit">EDIT</button>
+                <br>
+                <hr>
+    </nav>
+
+    <img src="https://static.toiimg.com/thumb/msid-122069034,width-1070,height-580,imgsize-181312,resizemode-75,overlay-toi_sw,pt-32,y_pad-40/photo.jpg" height="150px">
+    <img src="https://thumbs.dreamstime.com/b/female-college-student-happy-girl-european-university-scholarship-uni-91749887.jpg" height="150px">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiZLTsqEL8QFeX6InqYv4Frb0hG8ez2y1ZdA&s" height="150px">
+    <img src="https://static.vecteezy.com/system/resources/thumbnails/003/905/045/small/male-student-portrait-isolated-on-blue-background-pointing-photo.jpg" height="150px">
+    <script href="StudentManageDashboard.js"></script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Student Manage Dashboard</title>
+        <link rel="stylesheet" href="StudentManageDashboard.css">
+</head>
+<body>
+        <header>Student Manage Dashboard</header>
+
+        <div class="container">
+          <div class="sidebar">
+            <h3>Menu</h3>
+            <a href="#">Dashboard</a>
+            <a href="#">Student</a>
+            <a href="#">Attendance</a>
+            <a href="#">Result</a>
+            <a href="#">Logout</a>
+          </div>
+
+          <div class="content">
+                <div class="cards">
+                     <div class="card">
+                        <h3>Total Students</h3>
+                        <h2 id="totalStudents">0</h2>
+                     </div>
+                     <div class="card">
+                        <h3>Pending Fees</h3>
+                        <h2>12</h2>
+                     </div>
+                </div>
+
+                <button class="add" onclick="addstudent()">Add Student</button>
+
+                <table>
+                        <thead>
+                                <tr>
+                                        <th>ID</th>
+                                        <th>Name</th>
+                                        <th>Course</th>
+                                        <th>Action</th>
+                                </tr>
+                        </thead>
+                        <tbody id="studentTable"></tbody>
+                </table>
+          </div>
+        </div>
+ 
+        <script src="StudentManageDashboard.js"></script>
+
+</body>
+</html>
